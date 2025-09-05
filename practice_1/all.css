@@ -1,0 +1,95 @@
+.main {
+    cursor: pointer;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+img {
+    width: 100%;
+    height: 120px;
+}
+
+p {
+    margin: 0px 0px 5px 2px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+.main:hover {
+    box-shadow: 4px 4px 20px black;;
+}
+
+h1:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Applies shadow to the text */
+}
+
+
+
+
+.smile {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgb(230, 153, 0);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.eye {
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    background-color: black;
+    border-radius: 50%;
+    left: 30px;
+    top: 45px;
+}
+
+.mouth {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(255, 4, 0);
+    position: relative;
+    top: 100px;
+    left: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.left {
+    position: relative;
+    left: 100px;
+}
+
+
+.smile:hover .mouth {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.smile:hover {
+    box-shadow: 6px 6px 15px rgb(230, 153, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
