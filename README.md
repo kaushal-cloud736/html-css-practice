@@ -1,2 +1,3 @@
 # html-css-practice
-A collection of small HTML &amp; CSS practice projects, including layouts, forms, and UI components.
+Exploring frontend design through small HTML & CSS projects — from simple forms to complete layouts.
+
