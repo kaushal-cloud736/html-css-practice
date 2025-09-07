@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.interior {
+    color: white;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    width: 30%;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+
+/* Creating Underline Hover effect */
+
+p {
+    position: relative;
+    cursor: pointer;
+}
+
+p::before {
+    position: absolute;
+    content: "  ";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    right: 50%;
+    top: 20px;
+    transition: 0.5s;
+}
+
+p::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transition: 0.5s;
+}
+
+p:hover::before {
+    width: 50%;
+}
+
+p:hover::after {
+    width: 50%;
+}
+
+
+/* middle */
+
+.middle {
+    height: 300px;
+    width: 900px;
+    /* border: 1px solid rgb(168, 23, 23); */
+    position: relative;
+    top: 150px;
+    left: 20%;
+}
+
+
+
+.no {
+    color: whitesmoke;
+    /* border: 1px solid green; */
+    /* background-color: #adc2c0; */
+    font-size: 5rem;
+    margin: 0;
+}
+
+.subscribe {
+    margin-top: 60px;
+}
+
+h4 {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+
+
+/* lower  */
+
+.lower {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.hi {
+    height: 40px;
+    width: 30%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    border: 1px solid #009688;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* z-index: 1; ab yaha pe z index 1 apply ho raha hai but ::after bhi to .hi ka part hai isliye letter dikh nhi raha hai */
+}
+
+span {
+     z-index: 1;/* here span element div element ke upar aa ja raha hai */
+}
+
+
+
+.hi::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #009688;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+
+.hi:hover::after {
+    width: 100%;
+    /* visibility: visible; */
+}
